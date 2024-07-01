@@ -1,0 +1,19 @@
+{
+  "extends": "../../../tsconfig.base.json",
+  "compilerOptions": {
+    "outDir": "../../../dist/server",
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+    "target": "ES2020",
+    "esModuleInterop": true,
+    "baseUrl": "../../",
+    "paths": {
+      "@server/*": ["scripts/server/*"],
+      "@shared/*": ["scripts/shared/*"]
+    }
+  },
+  "include": ["**/*", "../shared/**/*"],
+  "ts-node": {
+    "esm": true
+  }
+}

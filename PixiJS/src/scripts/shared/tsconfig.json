@@ -1,0 +1,17 @@
+{
+  "extends": "../../../tsconfig.base.json",
+  "compilerOptions": {
+    "outDir": "../../../dist/shared",
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+    "target": "ES2020",
+    "esModuleInterop": true,
+    "baseUrl": "./",
+    "paths": {
+      "@shared/*": ["./*"]
+    },
+    "declaration": true,
+    "composite": true
+  },
+  "include": ["**/*"]
+}
